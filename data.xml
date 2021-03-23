@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bookstore xmlns="http://bookstore.org">
+    <department name="scientific_products">
+        <book>
+            <title>Some Title</title>
+            <authors>
+                <author>Name Surname</author>
+                <author>Name2 Surname2</author>
+            </authors>
+
+            <publisher>Name of Pub</publisher>
+            <publication-year>1998</publication-year>
+            <abstract>Lorem Ipsum</abstract>
+            <edition>2nd edition</edition>
+            <isbn>235235325</isbn>
+        </book>
+
+        <journal>
+            <title>hehe</title>
+            <volume>3</volume>
+            <authors>
+                <author>Name Surname</author>
+                <author>Name2 Surname2</author>
+            </authors>
+            <publication-year>1998</publication-year>
+            <publisher>Publisher 033</publisher>
+            <publication-year>1998</publication-year>
+        </journal>
+
+        <book>
+            <title>Some Title</title>
+            <editors>
+                <editor>Name Surname</editor>
+                <editor>Name2 Surname2</editor>
+            </editors>
+            <publisher>Name of Pub</publisher>
+            <publication-year>1998</publication-year>
+            <abstract>Lorem Ipsum</abstract>
+            <edition>2nd edition</edition>
+            <isbn>235235325</isbn>
+        </book>
+
+        <journal>
+            <title>hehe</title>
+            <volume>3</volume>
+            <authors>
+                <author>Name Surname</author>
+                <author>Name2 Surname2</author>
+            </authors>
+            <publication-year>1998</publication-year>
+            <publisher>Publisher 033</publisher>
+            <publication-year>1998</publication-year>
+        </journal>
+    </department>
+
+    <department name="leisure_products">
+        <book>
+            <title>Some Title</title>
+            <authors>
+                <author>Name Surname</author>
+                <author>Name2 Surname2</author>
+            </authors>
+            <publisher>Name of Pub</publisher>
+            <publication-year>1998</publication-year>
+            <edition>2nd edition</edition>
+        </book>
+
+        <book>
+            <title>Some Title</title>
+            <authors>
+                <author>Name Surname</author>
+                <author>Name2 Surname2</author>
+            </authors>
+            <publisher>Name of Pub</publisher>
+            <publication-year>1998</publication-year>
+            <genre>Horror</genre>
+        </book>
+
+        <pereodical>
+            <title>Bla bla</title>
+            <price>5.99</price>
+            <publisher>Name of Pub</publisher>
+        </pereodical>
+
+        <pereodical>
+            <title>Bla bla 2</title>
+            <publisher>Name of Pub</publisher>
+            <price>5.99</price>
+        </pereodical>
+
+        <book>
+            <title>Some Title</title>
+            <authors>
+                <author>Name Surname</author>
+                <author>Name2 Surname2</author>
+            </authors>
+            <publisher>Name of Pub</publisher>
+            <publication-year>1998</publication-year>
+           
+            <edition>2nd edition</edition>
+        </book>
+
+    </department>
+</bookstore>

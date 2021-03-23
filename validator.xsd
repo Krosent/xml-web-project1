@@ -1,0 +1,178 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://bookstore.org"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="bookstore" type="bs:bookstoreType"
+        xmlns:bs="http://bookstore.org"/>
+
+    <xs:complexType name="authorsType">
+        <xs:sequence>
+            <xs:element type="xs:string" name="author" maxOccurs="unbounded" minOccurs="1"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="editorsType">
+        <xs:sequence>
+            <xs:element type="xs:string" name="editor" maxOccurs="unbounded" minOccurs="1"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="abstractBookType">
+        <xs:sequence>
+            <xs:element type="xs:string" name="title" minOccurs="0"/>
+            <xs:element type="xs:string" name="publisher" minOccurs="0"/>
+            <xs:element type="xs:short" name="publication-year"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="scientificBookType">
+        <xs:complexContent>
+            <xs:extension base="bs:abstractBookType"
+                xmlns:bs="http://bookstore.org">
+                <xs:sequence>
+                    <xs:element type="xs:string" name="abstract" minOccurs="0"/>
+                    <xs:element type="xs:string" name="edition" minOccurs="0"/>
+                    <xs:element type="xs:int" name="isbn" minOccurs="0"/>
+                    <xs:choice>
+                        <xs:element type="bs:authorsType" name="authors"
+                            xmlns:bs="http://bookstore.org" />
+                        <xs:element type="bs:editorsType" name="editors"
+                            xmlns:bs="http://bookstore.org" />
+                    </xs:choice>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+
+    <xs:complexType name="leisureBookType">
+        <xs:complexContent>
+            <xs:extension base="bs:abstractBookType"
+                xmlns:bs="http://bookstore.org">
+                <xs:sequence>
+                    <xs:element type="xs:string" name="abstract" minOccurs="0"/>
+                    <xs:element type="xs:string" name="edition" minOccurs="0"/>
+                    <xs:element type="xs:int" name="isbn" minOccurs="0"/>
+                    <xs:element type="bs:authorsType" name="authors"
+                        xmlns:bs="http://bookstore.org" />
+                    <xs:element type="xs:string" name="publisher" minOccurs="0"/>
+                    <xs:element type="xs:short" name="publication-year"/>
+                    <xs:element type="xs:string" name="genre"/>
+                    <xs:element type="xs:string" name="edition" minOccurs="0" />
+                    <xs:element type="xs:short" name="num-pages" minOccurs="0" />
+                </xs:sequence>
+
+                <xs:attribute name="genre" use="required">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="thriller"/>
+                            <xs:enumeration value="horror"/>
+                            <xs:enumeration value="sci/fi"/>
+                            <xs:enumeration value="romance"/>
+                            <xs:enumeration value="literature"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:attribute>
+            </xs:extension>
+
+        </xs:complexContent>
+    </xs:complexType>
+
+
+    <xs:complexType name="bookType">
+        <xs:choice minOccurs="1" maxOccurs="1">
+            <xs:choice minOccurs="1" maxOccurs="unbounded">
+                <xs:sequence>
+                    <xs:element type="xs:string" name="title"/>
+                    <xs:choice>
+                        <xs:element type="bs:authorsType" name="authors"
+                            xmlns:bs="http://bookstore.org" />
+                        <xs:element type="bs:editorsType" name="editors"
+                            xmlns:bs="http://bookstore.org" />
+                    </xs:choice>
+                    <xs:element type="xs:string" name="publisher"/>
+                    <xs:element type="xs:short" name="publication-year"/>
+                    <xs:element type="xs:string" name="abstract" minOccurs="0"/>
+                    <xs:element type="xs:string" name="edition" minOccurs="0"/>
+                    <xs:element type="xs:int" name="isbn" minOccurs="0"/>
+                </xs:sequence>
+            </xs:choice>
+
+
+            <xs:choice minOccurs="1" maxOccurs="unbounded">
+                <xs:sequence>
+                    <xs:element type="xs:string" name="title" minOccurs="0"/>
+                    <xs:element type="bs:authorsType" name="authors"
+                        xmlns:bs="http://bookstore.org" minOccurs="1" />
+                    <xs:element type="xs:string" name="publisher" minOccurs="0"/>
+                    <xs:element type="xs:short" name="publication-year"/>
+                    <xs:element type="xs:string" name="genre"/>
+                    <xs:element type="xs:string" name="edition" minOccurs="0" />
+                    <xs:element type="xs:short" name="num-pages" minOccurs="0" />
+                </xs:sequence>
+            </xs:choice>
+
+        </xs:choice>
+    </xs:complexType>
+
+    <xs:complexType name="journalType">
+        <xs:choice maxOccurs="unbounded" minOccurs="0">
+            <xs:element type="xs:string" name="title" minOccurs="0"/>
+            <xs:element type="xs:byte" name="volume"/>
+            <xs:element type="bs:authorsType" name="authors" minOccurs="0"
+                xmlns:bs="http://bookstore.org"/>
+            <xs:element type="xs:short" name="publication-year" minOccurs="0"/>
+            <xs:element type="xs:string" name="publisher" minOccurs="0"/>
+            <xs:element type="bs:editorsType" name="editors"
+                xmlns:bs="http://bookstore.org"/>
+            <xs:element type="xs:string" name="abstract"/>
+            <xs:element type="xs:string" name="edition"/>
+            <xs:element type="xs:int" name="isbn"/>
+        </xs:choice>
+    </xs:complexType>
+
+    <xs:complexType name="departmentType">
+        <xs:choice maxOccurs="unbounded" minOccurs="0">
+            <!-- <xs:element name="book" type="bs:scientificBookType" xmlns:bs="http://bookstore.org">    
+            </xs:element> -->
+
+            <!-- <xs:element name="book" type="bs:leisureBookType" xmlns:bs="http://bookstore.org">            
+            </xs:element>  -->
+
+            <!-- <xs:element name="book" xmlns:bs="http://bookstore.org">
+                <xs:alternative test="@name=scientific_products" type="bs:scientificBookType" xmlns:bs="http://bookstore.org" />
+                <xs:alternative test="@name=leisure_products" type="bs:leisureBookType" xmlns:bs="http://bookstore.org" />
+            </xs:element> -->
+
+
+            <xs:element type="bs:bookType" name="book"
+                xmlns:bs="http://bookstore.org"/>
+
+            <xs:element type="bs:journalType" name="journal"
+                xmlns:bs="http://bookstore.org"/>
+            <xs:element type="bs:pereodicalType" name="pereodical"
+                xmlns:bs="http://bookstore.org"/>
+        </xs:choice>
+        <xs:attribute name="name" use="required">
+            <xs:simpleType>
+                <xs:restriction base="xs:string">
+                    <xs:pattern value="scientific_products"/>
+                    <xs:pattern value="leisure_products"/>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+    </xs:complexType>
+    <xs:complexType name="pereodicalType">
+        <xs:choice maxOccurs="unbounded" minOccurs="0">
+            <xs:element type="xs:string" name="title"/>
+            <xs:element type="xs:float" name="price"/>
+            <xs:element type="xs:string" name="publisher"/>
+        </xs:choice>
+    </xs:complexType>
+    <xs:complexType name="bookstoreType">
+        <xs:choice>
+            <xs:element type="bs:departmentType" name="department" maxOccurs="unbounded" minOccurs="0"
+                xmlns:bs="http://bookstore.org" />
+        </xs:choice>
+    </xs:complexType>
+
+
+
+</xs:schema>
