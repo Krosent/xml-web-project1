@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<bookshop xsi:noNamespaceSchemaLocation="bookshop_xml_shema.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<ScientificProducts>
+		<book type="scientific">
+			<title> Management of Security</title>
+			<ListingEditors>
+				<editor ID="P1">
+						<name>seuna</name>
+						<adresse>
+							<numero>54 A</numero>
+							<rue>Rue du Moulin a Papier</rue>
+							<PostalCode>1160</PostalCode>
+							<city>Auderghem</city>
+							<country>Belgique</country>
+						</adresse>
+						<Phones>
+							<Phone type="HousePhone" locality="BEL">032495196429</Phone>
+						</Phones>
+						<emails>
+							<email type="personnel">seam@gmail.com</email>
+							<email type="professionnel">seam@ulb.ac.be</email>
+						</emails>
+				</editor>
+			</ListingEditors>
+			<publisher>RMA</publisher>
+			<YearPublication>2000</YearPublication>
+		</book>
+		<journals>
+			<title> RESEARCH LABS 2</title>
+			<volume>57</volume>
+			<number>354</number>
+			<NumRedactor>756</NumRedactor>
+			<YearPublication>2015</YearPublication>
+			<contents>
+				<article>
+					<title> Article 2</title>
+					<ListingAuthors>
+						<authors ID="eds">
+							<person sexe="F">
+								<name>Seuna</name>
+								<FirstName>Matys</FirstName>
+								<adresse>
+									<numero>7</numero>
+									<rue>impasse du chemin</rue>
+									<PostalCode>7515</PostalCode>
+									<city>Bruxelle</city>
+									<country>Belgique</country>
+								</adresse>
+								<Phones>
+									<Phone type="HousePhone" locality="BEL">032495196429</Phone>
+									<Phone type="cellphone" locality="BEL">032495196429</Phone>
+									<Phone type="OfficePhone" locality="BEL">032495196429</Phone>
+								</Phones>
+								<emails>
+									<email type="personnel">seam@ulb.ac.be</email>
+									<email type="professionnel">seam@ulb.ac.be</email>
+								</emails>
+							</person>
+						</authors>
+					</ListingAuthors>
+
+					<NumArticle>56</NumArticle>
+				</article>
+			</contents>
+		</journals>
+	</ScientificProducts>
+	<LeisureProducts>
+		<book type="leisure" genre="literature">
+			<title> Teste du title du livre</title>
+			<ListingAuthors>
+						<authors ID="PTs">
+							<person sexe="M">
+								<name>Seuna</name>
+								<FirstName>Matys</FirstName>
+								<adresse>
+									<numero>54 A</numero>
+									<rue>Rue du Moulin a papier </rue>
+									<PostalCode>1160</PostalCode>
+									<city>Auderghem</city>
+									<country>Belgique</country>
+								</adresse>
+								<Phones>
+									<Phone type="HousePhone" locality="BEL">03265765675675</Phone>
+									<Phone type="cellphone" locality="BEL">03265765675675</Phone>
+									<Phone type="OfficePhone" locality="BEL">0325865675</Phone>
+								</Phones>
+								<emails>
+									<email type="personnel">seam@ulb.ac.be</email>
+									<email type="professionnel">seam@ulb.ac.be</email>
+								</emails>
+							</person>
+						</authors>
+					</ListingAuthors>
+			<publisher>Nom de l'editeur</publisher>
+			<YearPublication>2019</YearPublication>
+
+		</book>
+		<periodicals>
+			<title> Book Title</title>
+			<price currency="XAF">4500</price>
+			<publisher>Name of publisher</publisher>
+		</periodicals>
+	</LeisureProducts>
+</bookshop>
