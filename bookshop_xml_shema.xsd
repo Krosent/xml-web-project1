@@ -180,9 +180,9 @@
 
 	<xsd:element name="authors">
 		<xsd:complexType>
-			<xsd:all>
+			<xsd:choice minOccurs="0" maxOccurs="unbounded">
 				<xsd:element ref="person"/>
-			</xsd:all>
+			</xsd:choice>
 			<xsd:attribute ref="ID" use="required"/>
 		</xsd:complexType>
 	</xsd:element>
