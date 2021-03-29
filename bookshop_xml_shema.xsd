@@ -308,10 +308,6 @@
 		</xsd:complexType>
 	</xsd:element>
 
-
-
-
-
 	<xsd:element name="bookshop">
 		<xsd:complexType>
 			<xsd:sequence>

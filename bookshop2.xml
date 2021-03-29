@@ -28,6 +28,31 @@
 			<YearPublication>2000</YearPublication>
 		</book>
 
+		<book type="scientific">
+			<title> Management of Security</title>
+			<ListingEditors>
+				<editor ID="P2">
+					<name>Artyom</name>
+					<adresse>
+						<numero>375</numero>
+						<rue>Avenue De La Couronne</rue>
+						<PostalCode>1050</PostalCode>
+						<city>Brussels</city>
+						<country>Belgium</country>
+					</adresse>
+					<Phones>
+						<Phone type="HousePhone" locality="BEL">032495196429</Phone>
+					</Phones>
+					<emails>
+						<email type="personnel">seam@gmail.com</email>
+						<email type="professionnel">seam@ulb.ac.be</email>
+					</emails>
+				</editor>
+			</ListingEditors>
+			<publisher>RMA</publisher>
+			<YearPublication>2000</YearPublication>
+		</book>
+
 		<journals>
 			<title> RESEARCH LABS 2</title>
 			<volume>57</volume>
@@ -61,12 +86,12 @@
 							</person>
 						</authors>
 					</ListingAuthors>
-
 					<NumArticle>56</NumArticle>
 				</article>
 			</contents>
 		</journals>
 	</ScientificProducts>
+
 	<LeisureProducts>
 		<book type="leisure" genre="literature">
 			<title> Teste du title du livre</title>
@@ -92,12 +117,10 @@
 							<email type="professionnel">seam@ulb.ac.be</email>
 						</emails>
 					</person>
-
 				</authors>
 			</ListingAuthors>
 			<publisher>Nom de l'editeur</publisher>
 			<YearPublication>2019</YearPublication>
-
 		</book>
 		<periodicals>
 			<title> Book Title</title>
