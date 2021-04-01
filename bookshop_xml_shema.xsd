@@ -76,6 +76,8 @@
 							<xsd:enumeration value="BEL"/>
 							<xsd:enumeration value="CMR"/>
 							<xsd:enumeration value="USA"/>
+							<xsd:enumeration value="AZE"/>
+							<xsd:enumeration value="RUS"/>
 							<xsd:enumeration value="FRA"/>
 						</xsd:restriction>
 					</xsd:simpleType>
