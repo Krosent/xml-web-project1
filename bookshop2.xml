@@ -138,9 +138,9 @@
 							<country>Belgium</country>
 						</address>
 						<Phones>
-							<Phone type="HousePhone" locality="BEL">0485223343</Phone>
-							<Phone type="cellphone" locality="BEL">0485223343</Phone>
-							<Phone type="OfficePhone" locality="BEL">0485223343</Phone>
+							<Phone type="HousePhone" locality="AZE">0485223343</Phone>
+							<Phone type="cellphone" locality="AZE">0485223343</Phone>
+							<Phone type="OfficePhone" locality="AZE">0485223343</Phone>
 						</Phones>
 						<emails>
 							<email type="personal">art@gmail.com</email>
