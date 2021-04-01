@@ -3,7 +3,7 @@
 <bookshop xsi:noNamespaceSchemaLocation="bookshop_xml_shema.xsd"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<ScientificProducts>
-		<book type="scientific">
+		<book type="science">
 			<title> Management of Security</title>
 			<ListingEditors>
 				<editor ID="P1">
@@ -20,7 +20,7 @@
 					</Phones>
 					<emails>
 						<email type="personal">seam@gmail.com</email>
-						<email type="professional">seam@ulb.ac.be</email>
+						<email type="professionnal">seam@ulb.ac.be</email>
 					</emails>
 				</editor>
 			</ListingEditors>
@@ -28,7 +28,7 @@
 			<YearPublication>2000</YearPublication>
 		</book>
 
-		<book type="scientific">
+		<book type="science">
 			<title> Management of Security</title>
 			<ListingEditors>
 				<editor ID="P2">
@@ -45,7 +45,7 @@
 					</Phones>
 					<emails>
 						<email type="personal">art@gmail.com</email>
-						<email type="professional">art.work@gmail.com</email>
+						<email type="professionnal">art.work@gmail.com</email>
 					</emails>
 				</editor>
 			</ListingEditors>
@@ -81,7 +81,7 @@
 								</Phones>
 								<emails>
 									<email type="personal">seam@ulb.ac.be</email>
-									<email type="professional">seam@ulb.ac.be</email>
+									<email type="professionnal">seam@ulb.ac.be</email>
 								</emails>
 							</person>
 						</authors>
@@ -106,7 +106,7 @@
 							<PostalCode>1140</PostalCode>
 							<city>Evere</city>
 							<country>Belgique</country>
-						</adress>
+						</address>
 						<Phones>
 							<Phone type="HousePhone" locality="BEL">032495196429</Phone>
 							<Phone type="cellphone" locality="BEL">032495196429</Phone>
@@ -114,7 +114,7 @@
 						</Phones>
 						<emails>
 							<email type="personal">slinda@ulb.ac.be</email>
-							<email type="professional">slinda@ulb.ac.be</email>
+							<email type="professionnal">slinda@ulb.ac.be</email>
 						</emails>
 					</person>
 				</authors>
@@ -130,21 +130,21 @@
 					<person sexe="M">
 						<name>Art</name>
 						<FirstName>Kuznetsov</FirstName>
-						<adresse>
-							<numero>375</numero>
-							<rue>Avenue De La Couronne</rue>
+						<address>
+							<street>Kroonlaan</street>
+							<number>375</number>
 							<PostalCode>1050</PostalCode>
-							<city>Brussels</city>
+							<city>Brussel</city>
 							<country>Belgium</country>
-						</adresse>
+						</address>
 						<Phones>
 							<Phone type="HousePhone" locality="BEL">0485223343</Phone>
 							<Phone type="cellphone" locality="BEL">0485223343</Phone>
 							<Phone type="OfficePhone" locality="BEL">0485223343</Phone>
 						</Phones>
 						<emails>
-							<email type="personnel">art@gmail.com</email>
-							<email type="professionnel">art.work@gmail.com</email>
+							<email type="personal">art@gmail.com</email>
+							<email type="professionnal">art.work@gmail.com</email>
 						</emails>
 					</person>
 				</authors>
