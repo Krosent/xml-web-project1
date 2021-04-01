@@ -8,7 +8,7 @@
 	<xsd:attribute name="type">
 		<xsd:simpleType>
 			<xsd:restriction base="xsd:string">
-				<xsd:enumeration value="scientific"/>
+				<xsd:enumeration value="science"/>
 				<xsd:enumeration value="leisure"/>
 			</xsd:restriction>
 		</xsd:simpleType>
@@ -42,8 +42,8 @@
 	<xsd:element name="FirstName" type="xsd:string"/>
 
 	<!--************  -->
-	<xsd:element name="numero" type="xsd:string"/>
-	<xsd:element name="rue" type="xsd:string"/>
+	<xsd:element name="street" type="xsd:string"/>
+	<xsd:element name="number" type="xsd:string"/>
 	<xsd:element name="city" type="xsd:string"/>
 	<xsd:element name="country" type="xsd:string"/>
 
@@ -90,11 +90,11 @@
 	<xsd:complexType name="EMAIL">
 		<xsd:simpleContent>
 			<xsd:extension base="xsd:string">
-				<xsd:attribute name="type" default="personnel">
+				<xsd:attribute name="type" default="personal">
 					<xsd:simpleType>
 						<xsd:restriction base="xsd:string">
-							<xsd:enumeration value="personnel"/>
-							<xsd:enumeration value="professionnel"/>
+							<xsd:enumeration value="personal"/>
+							<xsd:enumeration value="professionnal"/>
 						</xsd:restriction>
 					</xsd:simpleType>
 				</xsd:attribute>
@@ -113,11 +113,11 @@
 	</xsd:element>
 
 
-	<xsd:element name="adresse">
+	<xsd:element name="address">
 		<xsd:complexType>
 			<xsd:sequence>
-				<xsd:element ref="numero"/>
-				<xsd:element ref="rue"/>
+				<xsd:element ref="street"/>
+				<xsd:element ref="number"/>
 				<xsd:element ref="PostalCode"/>
 				<xsd:element ref="city"/>
 				<xsd:element ref="country"/>
@@ -139,7 +139,7 @@
 		<xsd:complexType>
 			<xsd:sequence>
 				<xsd:element ref="name"/>
-				<xsd:element ref="adresse"/>
+				<xsd:element ref="address"/>
 				<xsd:element ref="Phones"/>
 				<xsd:element ref="emails"/>
 			</xsd:sequence>
@@ -163,7 +163,7 @@
 			<xsd:sequence>
 				<xsd:element ref="name"/>
 				<xsd:element ref="FirstName"/>
-				<xsd:element ref="adresse"/>
+				<xsd:element ref="address"/>
 				<xsd:element ref="Phones"/>
 				<xsd:element ref="emails"/>
 			</xsd:sequence>
@@ -253,7 +253,7 @@
 	</xsd:element>
 
 
-	<xsd:complexType name="bookScientifique">
+	<xsd:complexType name="ScienceBook">
 		<xsd:sequence>
 			<xsd:element ref="title"/>
 			<xsd:choice>
@@ -315,7 +315,7 @@
 				<xsd:element name="ScientificProducts">
 					<xsd:complexType>
 						<xsd:choice minOccurs="0" maxOccurs="unbounded">
-							<xsd:element name="book" type="bookScientifique"/>
+							<xsd:element name="book" type="ScienceBook"/>
 							<xsd:element ref="journals"/>
 						</xsd:choice>
 					</xsd:complexType>

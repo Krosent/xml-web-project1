@@ -8,19 +8,19 @@
 			<ListingEditors>
 				<editor ID="P1">
 					<name>seuna</name>
-					<adresse>
-						<numero>54 A</numero>
-						<rue>Rue du Moulin a Papier</rue>
+					<address>
+						<street>Rue du Moulin a Papier</street>
+						<number>54 A</number>
 						<PostalCode>1160</PostalCode>
 						<city>Auderghem</city>
 						<country>Belgique</country>
-					</adresse>
+					</address>
 					<Phones>
 						<Phone type="HousePhone" locality="BEL">032495196429</Phone>
 					</Phones>
 					<emails>
-						<email type="personnel">seam@gmail.com</email>
-						<email type="professionnel">seam@ulb.ac.be</email>
+						<email type="personal">seam@gmail.com</email>
+						<email type="professional">seam@ulb.ac.be</email>
 					</emails>
 				</editor>
 			</ListingEditors>
@@ -33,19 +33,19 @@
 			<ListingEditors>
 				<editor ID="P2">
 					<name>Artyom</name>
-					<adresse>
-						<numero>375</numero>
-						<rue>Avenue De La Couronne</rue>
+					<address>
+						<street>Avenue De La Couronne</street>
+						<number>375</number>
 						<PostalCode>1050</PostalCode>
 						<city>Brussels</city>
 						<country>Belgium</country>
-					</adresse>
+					</address>
 					<Phones>
 						<Phone type="HousePhone" locality="BEL">0485223343</Phone>
 					</Phones>
 					<emails>
-						<email type="personnel">art@gmail.com</email>
-						<email type="professionnel">art.work@gmail.com</email>
+						<email type="personal">art@gmail.com</email>
+						<email type="professional">art.work@gmail.com</email>
 					</emails>
 				</editor>
 			</ListingEditors>
@@ -64,24 +64,24 @@
 					<title> Article 2</title>
 					<ListingAuthors>
 						<authors ID="eds">
-							<person sexe="F">
+							<person sexe="M">
 								<name>Seuna</name>
 								<FirstName>Matys</FirstName>
-								<adresse>
-									<numero>7</numero>
-									<rue>impasse du chemin</rue>
+								<address>
+									<street>impasse du chemin</street>
+									<number>7</number>
 									<PostalCode>7515</PostalCode>
 									<city>Bruxelle</city>
 									<country>Belgique</country>
-								</adresse>
+								</address>
 								<Phones>
 									<Phone type="HousePhone" locality="BEL">032495196429</Phone>
 									<Phone type="cellphone" locality="BEL">032495196429</Phone>
 									<Phone type="OfficePhone" locality="BEL">032495196429</Phone>
 								</Phones>
 								<emails>
-									<email type="personnel">seam@ulb.ac.be</email>
-									<email type="professionnel">seam@ulb.ac.be</email>
+									<email type="personal">seam@ulb.ac.be</email>
+									<email type="professional">seam@ulb.ac.be</email>
 								</emails>
 							</person>
 						</authors>
@@ -94,37 +94,37 @@
 
 	<LeisureProducts>
 		<book type="leisure" genre="literature">
-			<title> Teste du title du livre</title>
+			<title> Title Book Test </title>
 			<ListingAuthors>
 				<authors ID="PTs">
 					<person sexe="M">
 						<name>Seuna</name>
-						<FirstName>Matys</FirstName>
-						<adresse>
-							<numero>54 A</numero>
-							<rue>Rue du Moulin a papier </rue>
-							<PostalCode>1160</PostalCode>
-							<city>Auderghem</city>
+						<FirstName>Linda</FirstName>
+						<address>
+							<street>Rue Edouard Dekoster </street>
+							<number>47</number>
+							<PostalCode>1140</PostalCode>
+							<city>Evere</city>
 							<country>Belgique</country>
-						</adresse>
+						</adress>
 						<Phones>
-							<Phone type="HousePhone" locality="BEL">03265765675675</Phone>
-							<Phone type="cellphone" locality="BEL">03265765675675</Phone>
-							<Phone type="OfficePhone" locality="BEL">0325865675</Phone>
+							<Phone type="HousePhone" locality="BEL">032495196429</Phone>
+							<Phone type="cellphone" locality="BEL">032495196429</Phone>
+							<Phone type="OfficePhone" locality="BEL">032495196429</Phone>
 						</Phones>
 						<emails>
-							<email type="personnel">seam@ulb.ac.be</email>
-							<email type="professionnel">seam@ulb.ac.be</email>
+							<email type="personal">slinda@ulb.ac.be</email>
+							<email type="professional">slinda@ulb.ac.be</email>
 						</emails>
 					</person>
 				</authors>
 			</ListingAuthors>
-			<publisher>Nom de l'editeur</publisher>
-			<YearPublication>2019</YearPublication>
+			<publisher>Editor Name</publisher>
+			<YearPublication>2021</YearPublication>
 		</book>
 
 		<book type="leisure" genre="horror">
-			<title> Teste du title du livre</title>
+			<title> Title Book Test </title>
 			<ListingAuthors>
 				<authors ID="PT2">
 					<person sexe="M">
@@ -149,8 +149,8 @@
 					</person>
 				</authors>
 			</ListingAuthors>
-			<publisher>Nom de l'editeur</publisher>
-			<YearPublication>2019</YearPublication>
+			<publisher>Editor Name</publisher>
+			<YearPublication>2021</YearPublication>
 		</book>
 		<periodicals>
 			<title> Book Title</title>
