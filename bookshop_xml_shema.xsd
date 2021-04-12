@@ -295,8 +295,9 @@
 									<xsd:simpleType>
 										<xsd:restriction base="xsd:string">
 											<xsd:enumeration value="EURO"/>
-											<xsd:enumeration value="DOL"/>
+											<xsd:enumeration value="USD"/>
 											<xsd:enumeration value="XAF"/>
+											<xsd:enumeration value="AZN"/>
 										</xsd:restriction>
 									</xsd:simpleType>
 								</xsd:attribute>

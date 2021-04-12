@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<bookshop xsi:noNamespaceSchemaLocation="bookshop_xml_shema.xsd"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<ScientificProducts>
+		<book type="science">
+			<title> Management of Security</title>
+			<ListingEditors>
+				<editor ID="P1">
+					<name>seuna</name>
+					<address>
+						<street>Rue du Moulin a Papier</street>
+						<number>54 A</number>
+						<PostalCode>1160</PostalCode>
+						<city>Auderghem</city>
+						<country>Belgique</country>
+					</address>
+					<Phones>
+						<Phone type="HousePhone" locality="BEL">032495196429</Phone>
+					</Phones>
+					<emails>
+						<email type="personal">seam@gmail.com</email>
+						<email type="professionnal">seam@ulb.ac.be</email>
+					</emails>
+				</editor>
+			</ListingEditors>
+			<publisher>RMA</publisher>
+			<YearPublication>2000</YearPublication>
+		</book>
+
+		<book type="science">
+			<title> Management of Security</title>
+			<ListingEditors>
+				<editor ID="P2">
+					<name>Artyom</name>
+					<address>
+						<street>Avenue De La Couronne</street>
+						<number>375</number>
+						<PostalCode>1050</PostalCode>
+						<city>Brussels</city>
+						<country>Belgium</country>
+					</address>
+					<Phones>
+						<Phone type="HousePhone" locality="BEL">0485223343</Phone>
+					</Phones>
+					<emails>
+						<email type="personal">art@gmail.com</email>
+						<email type="professionnal">art.work@gmail.com</email>
+					</emails>
+				</editor>
+			</ListingEditors>
+			<publisher>Baki</publisher>
+			<YearPublication>2001</YearPublication>
+		</book>
+	</ScientificProducts>
+
+	<LeisureProducts>
+		<periodicals>
+			<title> Book Title</title>
+			<price currency="USD">4500</price>
+			<publisher>Name of publisher 1</publisher>
+		</periodicals>
+
+
+		<periodicals>
+			<title> Book Title 2</title>
+			<price currency="AZN">3500</price>
+			<publisher>Name of publisher 2</publisher>
+		</periodicals>
+
+
+	</LeisureProducts>
+</bookshop>
